@@ -114,6 +114,9 @@ b {
     margin: 0px;
     padding: 60px 0px;
 }
+.footer .credits a {
+    color: white;
+}
 
 @media (min-width: 300px) {
     .introducao img {
