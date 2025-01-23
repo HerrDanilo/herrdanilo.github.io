@@ -1,12 +1,23 @@
 body {
     text-align: center;
     background-color: #333031;
+    margin: 0;
 }
 
 p {
     color: white;
     font-size: 2rem;
     padding: 0px 3em;
+}
+
+b {
+    color: #8a7289;
+    font-weight: bold;
+}
+
+.link {
+    color: #8a7289;
+    text-decoration: underline;
 }
 
 .introducao {
@@ -81,6 +92,9 @@ p {
     padding: 10em;
 }
 
+.projeto {
+    padding-top: 30px;
+}
 .projeto h1 {
     font-size: 5em;
     margin-bottom: 20px;
@@ -116,4 +130,5 @@ p {
     font-size: 40px;
     font-weight: bold;
     margin: 0px;
+    padding-bottom: 60px;
 }
