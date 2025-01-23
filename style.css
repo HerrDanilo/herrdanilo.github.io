@@ -1,7 +1,13 @@
+@font-face {
+    font-family: "Bodoni MT Condensed";
+    src: url("fontes/BOD_CR.ttf") format("truetype");
+}
+
 body {
     text-align: center;
     background-color: #333031;
     margin: 0;
+    font-family: "Bodoni MT Condensed";
 }
 
 p {
