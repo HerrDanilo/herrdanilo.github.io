@@ -1,0 +1,85 @@
+.introducao {
+    height: 90vh;
+}
+
+.introducao img {
+    width: 50em;
+    height: auto;
+}
+
+.topico {
+    padding-top: 3em;
+    width: 80%;
+    height: auto;
+}
+
+.projeto h1 {
+    font-size: 5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #8a7289;
+}
+
+.gamePreview {
+    width: 75%;
+    max-width: 80%;
+    height: auto;
+    transition: 1s;
+    border: 1px solid white;
+}
+
+.gamePreview:hover {
+    width: 80%;
+}
+
+.separacaoProjetos {
+    border: 1px solid #8a7289;
+    width: 85%;
+    margin: 0 auto;
+}
+
+@media (min-width: 300px) {
+    .introducao img {
+        margin-top: 35vh;
+    }
+
+    .sobreMimContent {
+        flex-direction: column;
+    }
+
+    .habilidades {
+        padding-top: 5em;
+        width: 75%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    .introducao img {
+        margin-top: 25vh;
+    }
+
+    .habilidades {
+        padding-top: 5em;
+        width: 50%;
+        height: auto;
+    }
+
+    .topico {
+        width: 40%;
+        height: auto;
+    }
+
+    .gamePreview {
+        width: 50%;
+        max-width: 55%;
+    }
+}
+
+@media (min-width: 1300px) {}
+
+@media (max-height: 750px) {
+    .introducao {
+        height: 100vh;
+    }
+}

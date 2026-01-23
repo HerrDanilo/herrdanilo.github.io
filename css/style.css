@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "Bodoni MT Condensed";
+    src: url("../fontes/BOD_CR.ttf") format("truetype");
+}
+
+body {
+    text-align: center;
+    background-color: #333031;
+    margin: 0;
+    color: white;
+    font-family: "Bodoni MT Condensed";
+}
+
+p {
+    font-size: 2rem;
+    padding: 0px 3em;
+}
+
+b {
+    color: #8a7289;
+    font-weight: bold;
+}
+
+.link {
+    color: #8a7289;
+    text-decoration: underline;
+}
+
+.separacao {
+    padding: 10em;
+}
+
+.separacaoMeia {
+    padding: 5em;
+}
+
+.separacaoQuarta {
+    padding: 2.5em;
+}
+
+.topic {
+    padding: 0 10px;
+    background-color: #8a7289;
+    border-start-start-radius: 35px;
+    border-end-end-radius: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 18em;
+    max-height: 80px;
+}
+
+.topic p {
+    padding: 15px 10px;
+}
+
+.topic img {
+    width: 20%;
+}
+
+.centeredList ul {
+    padding: 0px;
+}
+
+.centeredList li {
+    padding: 5px;
+    font-size: 1.75rem;
+}
+
+.miniItchio {
+    padding-left: 7px;
+    width: 5%;
+    border: none;
+}
+
+.imgEsquerdaLink {
+    margin-bottom: -10px;
+    padding-right: 10px;
+    width: 3%;
+}
+
+@media (min-width: 300px) {
+    .miniItchio {
+        width: 7%;
+    }
+}
+
+@media (min-width: 700px) {
+    .miniItchio {
+        width: 6%;
+    }
+}
+
+@media (min-width: 1000px) {
+    p {
+        padding: 0px 5em;
+    }
+}
+
+@media (min-width: 1300px) {
+    .miniItchio {
+        width: 4%;
+    }
+}
+
+@media (min-width: 2000px) {
+    .miniItchio {
+        width: 2%;
+    }
+}

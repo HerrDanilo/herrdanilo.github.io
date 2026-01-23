@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="../scripts/script.js"></script>
+    <link rel="icon" href="../img/jogos/_icons/iconTimeHunt.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/gameStyle.css" />
+    <title>Time Hunt por Danilo do Prado</title>
+</head>
+
+<body>
+    <header class="header"></header>
+
+    <h1 id="home" class="gameTitle"><b>Time Hunt</b></h1>
+
+    <section> <!-- Game Images -->
+        <div class="gamePrints">
+            <div class="printsContainer">
+                <img class="print fade" src="../img/jogos/timeHunt/timeHunt_001.png" alt="">
+                <img class="print fade" src="../img/jogos/timeHunt/timeHunt_002.png" alt="">
+                <img class="print fade" src="../img/jogos/timeHunt/timeHunt_003.png" alt="">
+                <img class="print fade" src="../img/jogos/timeHunt/timeHunt_004.png" alt="">
+            </div>
+
+            <a class="previousPrint" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="nextPrint" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
+        <div class="dotsContainer" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+
+    <section class="gameDescription">
+        <p>
+            <a href="https://herrdanilo.itch.io/time-hunt" target="_blank">
+                <img class="miniItchio imgEsquerdaLink" src="../img/socials/itchio.png" alt="itch.io link">
+            </a>
+            <a class="link" href="https://herrdanilo.itch.io/time-hunt" target="_blank">Time Hunt está disponível na Itch.io!</a>
+        </p>
+        <p>
+            Time Hunt é um jogo plataforma de ação e aventura onde o tempo é o seu verdadeiro inimigo. Derrote monstros, escape de armadilhas, tudo isso enquanto procura por chaves para completar a fase no menor tempo possível.
+        </p>
+        <p>
+            Use suas habilidades para derrotar os inimigos, use os powerups que eles liberam para auxiliar na sua partida enquanto procura por chaves em todo o mapa antes que o tempo acabe.
+        </p>
+        <br>
+        <p>
+            Assim como o <a class="link" href="./DeadAttack.html" target="_blank">Dead Attack</a>, este jogo foi criado durante o curso <a class="link" href="https://desenvolvedorunity.com.br">Desenvolvedor Unity do Lucas Busato.</a>
+        </p>
+        <p>
+            Nesse jogo, criei uma inteligência artificial bem simples para os inimigos, com alguns diferentes ataques e as diversas armadilhas pelas fases, porém, o principal aspecto trabalhado nesse jogo, foi a questão do tempo que o jogador tem durante a fase.
+        </p>
+    </section>
+
+    <div class="separacaoQuarta"></div>
+
+    <section class="centeredList"> <!-- Proficiências -->
+        <br>
+        <div class="topic">
+            <img src="../img/jogos/_icons/iconDeadAttack.png" alt="Proficiências">
+            <p>Proficiências</p>
+            <p>&#10095;</p>
+        </div>
+        <ul>
+            <li>Unity</li>
+            <li>GitHub</li>
+            <li>C#</li>
+        </ul>
+    </section>
+
+    <section class="centeredList"> <!-- Responsabilidades -->
+        <br>
+        <div class="topic">
+            <img src="../img/jogos/_icons/iconDeadAttack.png" alt="Responsabilidades">
+            <p>Responsabilidades</p>
+            <p>&#10095;</p>
+        </div>
+        <ul>
+            <li>Programação</li>
+            <li>UI/UX</li>
+            <li>Level Design</li>
+        </ul>
+    </section>
+
+    <div class="separacaoMeia"></div>
+
+    <footer class="footer"></footer>
+
+</body>
+
+</html>
+
+<script src="../scripts/gameScript.js"></script>
+<script>
+    LoadHTMLElement('../html-templates/footer.html', 'footer');
+    LoadHTMLElement('../html-templates/header.html', 'header');
+</script>

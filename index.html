@@ -1,21 +1,21 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./img/design/logo.png" />
+    <meta charset="UTF-8">
+    <script src="./scripts/script.js"></script>
+    <link rel="icon" href="../img/design/logo.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/homeSyle.css">
     <title>Danilo do Prado | GameDev</title>
 </head>
 
 <body>
-    <header class="header roxo">
-        <ul class="display-flex">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobreMim">Sobre mim</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-        </ul>
-    </header>
+    <header class="header"></header>
+
     <div id="home" class="introducao">
-        <img src="./img/design/faixaAbertura.png" />
+        <a href="mailto:daniloprado7@gmail.com">
+            <img src="./img/design/faixaAbertura.png" />
+        </a>
     </div>
 
     <img src="img/design/logoBranco.png" alt="logo" />
@@ -24,18 +24,16 @@
         <img class="topico" src="./img/design/sobreMim.png" alt="Sobre Mim" />
         <div id="sobreMim" class="sobreMimContent">
             <p>
-                Sou Game Developer e Game Designer, <br />com uma grande paixão por
-                jogos desde a infância.
-                <br />
-                <br />Sempre imaginei que bons jogos são feitos com amor e carinho,
-                independente de quem os faça, e foi o que me motivou a entrar na área.
-                Além disso, foi buscando soluções para os problemas a minha volta que
-                me encontrei na área de programação muito cedo, com uma sede por
-                descobrir mais desse mundo lógico e maluco.
-                <br />
-                <br />Para me encontrar, basta olhar atrás do computador. Mas quando
-                não estou aqui, gosto de passar o tempo lendo, me exercitando, ouvindo
-                podcasts, <br />jogando RPG e aprendendo coisas novas.
+                Sou Game Developer e Game Designer, <br />com uma grande paixão por jogos desde a infância.
+            </p>
+            <p>
+                Sempre imaginei que bons jogos são feitos com amor e carinho, independente de quem os faça, e foi o que me motivou a entrar na área.
+            </p>
+            <p>
+                Além disso, foi buscando soluções para os problemas a minha volta que me encontrei na área de programação muito cedo, com uma sede por descobrir mais desse mundo lógico e maluco.
+            </p>
+            <p>
+                Para me encontrar, basta olhar atrás do computador. Mas quando não estou aqui, gosto de passar o tempo lendo, me exercitando, ouvindo podcasts, jogando RPG e aprendendo coisas novas.
             </p>
             <img class="habilidades" src="img/design/habilidades.png" />
         </div>
@@ -45,77 +43,76 @@
 
     <section class="projetos" id="projetos">
         <img class="topico" src="./img/design/projetos.png" alt="Projetos" />
-        <div class="projeto"> <!-- 2048 -->
-            <h1>2048</h1>
-            <a href="https://github.com/herrdanilo/2048" target="_blank">
-                <img src="img/projetos/2048.png" alt="2048" />
+
+        <div class="projeto"> <!-- Dead Attack -->
+            <h1>Dead Attack</h1>
+            <a href="./jogos/DeadAttack.html">
+                <img class="gamePreview" src="./img/jogos/deadAttack/IMG_M249-ADS.png" alt="Mirando com uma M249 para zumbis." />
             </a>
             <div>
+                <p>Compre armas e desbloqueie novas áreas enquanto sobrevive uma onda sem fim de zumbis.</p>
                 <p>
-                    Minha versão do famoso jogo de somar números em quadrados, até chegar a 2048.
-                    <br />
-                    Foi meu primeiro jogo finalizado, e só pude disponibilizá-lo para o público geral somente no GitHub,
-                    através da publicação de
-                    <a class="link" target="_blank" href="https://github.com/HerrDanilo/2048/releases">releases</a>.
+                    Criado durante o curso de <a class="link" href="https://desenvolvedorunity.com.br">Desenvolvedor Unity do Lucas Busato</a>, este jogo é até o momento, o mais complexo que fiz, contando com inimigos com inteligência artificial, diversas armas com diferentes características, interação do jogador com o cenário, e sistema de pontuação com os abates de zumbis.
+                </p>
+                <p>
+                    <a href="https://herrdanilo.itch.io/dead-attack-demo" target="_blank">
+                        <img class="miniItchio imgEsquerdaLink" src="./img/socials/itchio.png" alt="itch.io link">
+                    </a>
+                    <a class="link" href="https://herrdanilo.itch.io/dead-attack-demo">Demo disponível na Itch.io.</a>
                 </p>
             </div>
         </div>
+
+        <div class="separacaoProjetos"></div>
+        
+        <div class="projeto"> <!-- 2048 -->
+            <h1>2048</h1>
+            <a href="./jogos/2048.html">
+                <img class="gamePreview" src="./img/jogos/2048/2048_001.png" alt="2048" />
+            </a>
+            <div>
+                <p>Deslize blocos numerados para juntá-los até obter o bloco de número 2048.</p>
+                <p>Esta foi minha primeira tentativa bem sucedida de criar um jogo, ainda antes de qualquer curso especializado.</p>
+                <p>Apesar de só ter conseguido terminar ele depois do curso na EBAC...</p>
+                <p>
+                    <a href="https://herrdanilo.itch.io/2048" target="_blank">
+                        <img class="miniItchio imgEsquerdaLink" src="./img/socials/itchio.png" alt="itch.io link">
+                    </a>
+                    <a class="link" href="https://herrdanilo.itch.io/2048">Demo disponível na Itch.io.</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="separacaoProjetos"></div>
+
         <div class="projeto"> <!-- Projeto Reciclagem -->
             <h1>Projeto Reciclagem</h1>
-            <a href="" target="_blank">
-                <img src="img/projetos/ReciclagemIA-v0.12.0.png" alt="2048" />
+            <a>
+                <img class="gamePreview" src="./img/projetos/ReciclagemIA-v0.12.0.png" alt="Projeto reciclagem" />
             </a>
             <div>
                 <p>
                     Um projeto que criei para aplicar o aprendizado do pacote NavMesh da Unity.
-                    <br />
-                    É um jogo estilo idle, onde o jogador comprou recentemente um galpão de reciclagem e terá de
-                    consertá-lo, contratar mais funcionários, e
-                    melhorar o local para obter mais pacotes e avançar no progresso.
-                    <br>
+                </p>
+                <p>
+                    É um jogo estilo idle, onde o jogador comprou recentemente um galpão de reciclagem e terá de consertá-lo, contratar mais  funcionários, e melhorar o local para obter mais pacotes e avançar no progresso.
+                </p>
+                <p>
                     <b> OBS.: o jogo NÃO está no estágio jogável ainda! </b>
                 </p>
             </div>
         </div>
-        <div class="projeto"> <!-- Astronaut Adventures 2D -->
-            <h1>Astronaut Adventures 2D</h1>
-            <a href="" target="_blank">
-                <img src="img/projetos/plataforma2D.png" alt="Astronaut Adventures 2D" />
-            </a>
-            <div>
-                <p>
-                    Esse jogo foi um dos projetos que criei no curso de Desenvolvimento de Jogos Unity, da EBAC.
-                    <br>
-                    No estilo plataforma 2D, no game o jogador é um jovem astronauta que desembarcou num planeta
-                    distante, e terá de explorá-lo a fim de voltar ao seu planeta natal.
-                    <br>
-                    Durante o jogo, haverão criaturas alienígenas para enfrentar, e moedas para coletar para poder
-                    comprar power ups que o ajudarão na sua jornada.
-                </p>
-            </div>
-        </div>
+
     </section>
 
-    <div class="separacao"></div>
+    <div class="separacaoMeia"></div>
 
-    <footer class="footer">
-        <a class="seta" href="#home">
-            <img src="img/design/seta.png" />
-        </a>
-        <div class="grid">
-            <a class="left" href="https://github.com/herrdanilo" target="_blank">
-                <img src="img/socials/github.png" alt="github link" />
-            </a>
-            <a class="right" href="https://linkedin.com/in/herrdanilo/" target="_blank">
-                <img src="img/socials/linkedin.png" alt="linkedin link" />
-            </a>
-        </div>
-        <p class="credits">
-            <a href="https://www.behance.net/ilustragra" target="_blank">
-                ilustraGRA ©2025
-            </a>
-        </p>
-    </footer>
+    <footer class="footer"></footer>
 </body>
 
 </html>
+
+<script>
+    LoadHTMLElement('../html-templates/header.html', 'header');
+    LoadHTMLElement('../html-templates/footer.html', 'footer');
+</script>

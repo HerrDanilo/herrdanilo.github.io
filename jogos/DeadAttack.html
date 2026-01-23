@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="../scripts/script.js"></script>
+    <link rel="icon" href="../img/jogos/_icons/iconDeadAttack.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/gameStyle.css" />
+    <title>Dead Attack por Danilo do Prado</title>
+</head>
+
+<body>
+    <header class="header"></header>
+
+    <h1 id="home" class="gameTitle"><b>Dead Attack</b></h1>
+
+    <section> <!-- Game Images -->
+        <div class="gamePrints">
+            <div class="printsContainer">
+                <img class="print fade" src="../img/jogos/deadAttack/IMG_M4-LookingAtDivider.png" alt="">
+                <img class="print fade" src="../img/jogos/deadAttack/IMG_M170-LookingOutdoor.png" alt="">
+                <img class="print fade" src="../img/jogos/deadAttack/IMG_M249-ADS.png" alt="">
+                <img class="print fade" src="../img/jogos/deadAttack/IMG_RandomWeaponCrate.png" alt="">
+                <img class="print fade" src="../img/jogos/deadAttack/IMG_Supermarket.png" alt="">
+            </div>
+
+            <a class="previousPrint" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="nextPrint" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
+        <div class="dotsContainer" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </section>
+
+    <section class="gameDescription">
+        <p>
+        <p>
+            <a href="https://herrdanilo.itch.io/dead-attack-demo" target="_blank">
+                <img class="miniItchio imgEsquerdaLink" src="../img/socials/itchio.png" alt="itch.io link">
+            </a>
+            <a class="link" href="https://herrdanilo.itch.io/dead-attack-demo" target="_blank">A demo de Dead Attack está disponível na Itch.io!</a>
+        </p>
+        </p>
+        <p>
+            Dead Attack é um jogo de tiro em primeira pessoa, onde o objetivo do jogador é sobreviver o máximo possível
+            de ondas de zumbis.
+        </p>
+        <p>
+            Compre armas e desbloqueie novas áreas enquanto sobrevive uma onda sem fim de zumbis.
+        </p>
+        <br>
+        <p>
+            O Dead Attack foi criado durante o curso <a class="link"href="https://desenvolvedorunity.com.br">Desenvolvedor Unity do Lucas Busato</a>, mas quis dar a minha
+            cara, alterando o visual pra <i>low poly</i>, e adicionando algumas mêcanicas mais parecidas com o modo
+            zumbis do Call of Duty, jogo esse que foi parte da minha vida por muito tempo.
+        </p>
+        <p>
+            Produzi a demo do jogo em cerca de 4 meses, devido ao tempo de aprendizado por ter sido meu maior jogo até o
+            momento.
+        </p>
+        <p>
+            Apesar de ter lançado a demo, ainda não estou totalmente satisfeito com o jogo, quero poder mudar um pouco
+            os gráficos para manter a característica de <i>low poly</i> mas ainda ser diferente dos outros jogos que
+            usam da mesma técnica.
+        </p>
+        <p>
+            Além dos zumbis terem apenas um modelo, o mapa do jogo ser extremamente pequeno e não ter um ambiente fora
+            da parte jogável.
+        </p>
+    </section>
+
+    <div class="separacaoQuarta"></div>
+
+    <section class="centeredList"> <!-- Proficiências -->
+        <br>
+        <div class="topic">
+            <img src="../img/jogos/_icons/iconDeadAttack.png" alt="Proficiências">
+            <p>Proficiências</p>
+            <p>&#10095;</p>
+        </div>
+        <ul>
+            <li>Unity</li>
+            <li>GitHub</li>
+            <li>C#</li>
+        </ul>
+    </section>
+
+    <section class="centeredList"> <!-- Responsabilidades -->
+        <br>
+        <div class="topic">
+            <img src="../img/jogos/_icons/iconDeadAttack.png" alt="Responsabilidades">
+            <p>Responsabilidades</p>
+            <p>&#10095;</p>
+        </div>
+        <ul>
+            <li>Game Design</li>
+            <li>Programação</li>
+            <li>UI/UX</li>
+            <li>Level Design</li>
+            <li>Algumas animações (Armas e Divisores de mapa)</li>
+        </ul>
+    </section>
+
+    <div class="separacaoMeia"></div>
+
+    <footer class="footer"></footer>
+
+</body>
+
+</html>
+
+<script src="../scripts/gameScript.js"></script>
+<script>
+    LoadHTMLElement('../html-templates/footer.html', 'footer');
+    LoadHTMLElement('../html-templates/header.html', 'header');
+</script>

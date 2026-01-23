@@ -1,0 +1,53 @@
+.pageTitle {
+    font-size: 4em;
+}
+
+.games {
+    display: inline-grid;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.gameShort {
+    width: 700px;
+    background-color: #413d3e;
+    margin: 10px 50px;
+    border-radius: 10%;
+    border: 5px dotted gray;
+}
+
+.gameShort h1 {
+    font-size: 50px;
+}
+
+.gameShort p {
+    padding: 0px 50px;
+}
+
+.gamePreview {
+    width: 75%;
+    transition: 0.5s;
+    border: 1px solid white;
+}
+
+.gamePreview:hover {
+    width: 85%;
+}
+
+@media (min-width: 300px) {
+    .games {
+        grid-template-columns: 100%;
+    }
+}
+
+@media (min-width: 1700px) {
+    .games {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media (min-width: 2500px) {
+    .games {
+        grid-template-columns: repeat(3, 33%);
+    }
+}
