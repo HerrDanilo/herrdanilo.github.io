@@ -69,7 +69,7 @@ b {
 
 .miniItchio {
     padding-left: 7px;
-    width: 5%;
+    width: 6%;
     border: none;
 }
 
@@ -79,17 +79,9 @@ b {
     width: 3%;
 }
 
-@media (min-width: 300px) {
-    .miniItchio {
-        width: 7%;
-    }
-}
+@media (min-width: 300px) {}
 
-@media (min-width: 700px) {
-    .miniItchio {
-        width: 6%;
-    }
-}
+@media (min-width: 700px) {}
 
 @media (min-width: 1000px) {
     p {
@@ -97,14 +89,6 @@ b {
     }
 }
 
-@media (min-width: 1300px) {
-    .miniItchio {
-        width: 4%;
-    }
-}
+@media (min-width: 1300px) {}
 
-@media (min-width: 2000px) {
-    .miniItchio {
-        width: 2%;
-    }
-}
+@media (min-width: 2000px) {}
