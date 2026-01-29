@@ -1,1 +1,1 @@
-include: [".well-known", "./img/jogos/_icons"]
+include: [".well-known", "_icons"]
