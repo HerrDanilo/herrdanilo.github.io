@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="../scripts/script.js"></script>
+    <link rel="icon" href="../img/jogos/_icons/iconEmpilheAoInfinito.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/gameStyle.css" />
+    <title>Empilhe ao Infinito por Danilo do Prado</title>
+</head>
+
+<body>
+    <header class="header"></header>
+
+    <h1 id="home" class="gameTitle"><b>Empilhe ao Infinito</b></h1>
+
+    <section> <!-- Game Images -->
+        <div class="gamePrints">
+            <div class="printsContainer">
+                <img class="print fade" src="../img/jogos/EmpilheAoInfinito/EAI-MainMenu.png" alt="">
+                <img class="print fade" src="../img/jogos/EmpilheAoInfinito/EAI-Game.png" alt="">
+                <img class="print fade" src="../img/jogos/EmpilheAoInfinito/EAI-Game1.png" alt="">
+                <img class="print fade" src="../img/jogos/EmpilheAoInfinito/EAI-GameOver.png" alt="">
+                <img class="print fade" src="../img/jogos/EmpilheAoInfinito/EAI-Ranking.png" alt="">
+            </div>
+
+            <a class="previousPrint" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="nextPrint" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
+        <div class="dotsContainer" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </section>
+
+    <section class="gameDescription">
+        <p>
+        <p>
+            <a class="EmpilheAoInfinitoLink" target="_blank">
+                <img class="miniItchio imgEsquerdaLink" src="../img/socials/itchio.png" alt="itch.io link">
+            </a>
+            <a class="link EmpilheAoInfinitoLink" target="_blank">Empilhe Ao Infinito está disponível na Itch.io!</a>
+        </p>
+        </p>
+        <p>
+            Empilhe Ao Infinito é um jogo de puzzle em que o jogador deve empilhar blocos de diferentes tamanhos numa pequena plataforma no meio do mar.
+        </p>
+        <p>
+            O jogo foi o primeiro projeto do curso <a class="link" href="https://desenvolvedorunity.com.br">Desenvolvedor Unity do Lucas Busato</a>.
+        </p>
+        <p>
+            Neste projeto, aprendi a utilizar as ferramentas de cloud da Unity, como o <i>login</i> anônimo, e a tabela de pontuação.
+        </p>
+    </section>
+
+    <div class="separacaoQuarta"></div>
+
+    <section class="centeredList"> <!-- Proficiências -->
+        <br>
+        <div class="topic">
+            <p>Proficiências</p>
+            <p>&#10095;</p>
+        </div>
+        <ul>
+            <li>Unity</li>
+            <li>GitHub</li>
+            <li>C#</li>
+        </ul>
+    </section>
+
+    <section class="centeredList"> <!-- Responsabilidades -->
+        <br>
+        <div class="topic">
+            <p>Responsabilidades</p>
+            <p>&#10095;</p>
+        </div>
+        <ul>
+            <li>Game Design</li>
+            <li>Programação</li>
+            <li>UI/UX</li>
+        </ul>
+    </section>
+
+    <div class="separacaoMeia"></div>
+
+    <footer class="footer"></footer>
+
+</body>
+
+</html>
+
+<script src="../scripts/gameScript.js"></script>
+<script>
+    GetJsonData().then(data => {
+        var linkElements = document.getElementsByClassName("EmpilheAoInfinitoLink");
+
+        for (let i = 0; i < linkElements.length; i++) {
+            const element = linkElements[i];
+            element.setAttribute('href', data.links.games.EmpilheAoInfinito);
+        }
+    });
+
+
+    LoadHTMLElement('../html-templates/footer.html', 'footer');
+    LoadHTMLElement('../html-templates/header.html', 'header');
+</script>

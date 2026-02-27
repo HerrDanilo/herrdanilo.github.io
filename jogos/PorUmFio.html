@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="../scripts/script.js"></script>
+    <link rel="icon" href="../img/jogos/_icons/iconPorUmFio.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/gameStyle.css" />
+    <title>Por Um Fio por Danilo do Prado</title>
+</head>
+
+<body>
+    <header class="header"></header>
+
+    <h1 id="home" class="gameTitle"><b>Por Um Fio</b></h1>
+
+    <section> <!-- Game Images -->
+        <div class="gamePrints">
+            <div class="printsContainer">
+                <img class="print fade" src="../img/jogos/PorUmFio/PorUmFio-HUD.png" alt="">
+                <img class="print fade" src="../img/jogos/PorUmFio/PorUmFio-Carta.png" alt="">
+                <img class="print fade" src="../img/jogos/PorUmFio/PorUmFio-Dialogo.png" alt="">
+                <img class="print fade" src="../img/jogos/PorUmFio/PorUmFio-Workbench.png" alt="">
+            </div>
+
+            <a class="previousPrint" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="nextPrint" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
+        <div class="dotsContainer" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+
+    <section class="gameDescription">
+        <p>
+        <p>
+            <a class="PorUmFioLink" target="_blank">
+                <img class="miniItchio imgEsquerdaLink" src="../img/socials/itchio.png" alt="itch.io link">
+            </a>
+            <a class="link PorUmFioLink" target="_blank">Por Um Fio está disponível na Itch.io!</a>
+        </p>
+        </p>
+        <p>
+            Em Por Um Fio, o jogador controla o alfataite Theobald Tailleur, recebendo visitas e cartas de diferentes
+            personagens durante os períodos do dia fazendo cobranças e relembrando de suas dívidas.
+        </p>
+        <p>
+            Feito durante a <a class="link" href="https://itch.io/jam/ctrl-alt-jam-carnaval-2026" target="_blank">Ctrl
+                Alt Jam Carnaval 2026</a>, fiz parte de um grupo diverso, sendo o programador principal, e ajudando nas
+            decisões de Game Design.
+        </p>
+        <p>
+            Neste projeto, eu fui responsável pela jogabilidade, englobando o sistema de dias/períodos, trabalho e
+            dívidas com NPCs e cartas.
+        </p>
+    </section>
+
+    <div class="separacaoQuarta"></div>
+
+    <section class="centeredList"> <!-- Proficiências -->
+        <br>
+        <div class="topic">
+            <p>Proficiências</p>
+            <p>&#10095;</p>
+        </div>
+        <ul>
+            <li>Unity</li>
+            <li>GitHub</li>
+            <li>C#</li>
+        </ul>
+    </section>
+
+    <section class="centeredList"> <!-- Responsabilidades -->
+        <br>
+        <div class="topic">
+            <p>Responsabilidades</p>
+            <p>&#10095;</p>
+        </div>
+        <ul>
+            <li>Game Design</li>
+            <li>Programação</li>
+        </ul>
+    </section>
+
+    <div class="separacaoMeia"></div>
+
+    <footer class="footer"></footer>
+
+</body>
+
+</html>
+
+<script src="../scripts/gameScript.js"></script>
+<script>
+    GetJsonData().then(data => {
+        var linkElements = document.getElementsByClassName("PorUmFioLink");
+
+        for (let i = 0; i < linkElements.length; i++) {
+            const element = linkElements[i];
+            element.setAttribute('href', data.links.games.PorUmFio);
+        }
+    });
+
+    LoadHTMLElement('../html-templates/footer.html', 'footer');
+    LoadHTMLElement('../html-templates/header.html', 'header');
+</script>

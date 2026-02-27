@@ -41,10 +41,10 @@
     <section class="gameDescription">
         <p>
         <p>
-            <a href="https://herrdanilo.itch.io/dead-attack-demo" target="_blank">
+            <a class="DeadAttackDEMOLink" target="_blank">
                 <img class="miniItchio imgEsquerdaLink" src="../img/socials/itchio.png" alt="itch.io link">
             </a>
-            <a class="link" href="https://herrdanilo.itch.io/dead-attack-demo" target="_blank">A demo de Dead Attack está disponível na Itch.io!</a>
+            <a class="link DeadAttackDEMOLink" target="_blank">A demo de Dead Attack está disponível na Itch.io!</a>
         </p>
         </p>
         <p>
@@ -56,7 +56,7 @@
         </p>
         <br>
         <p>
-            O Dead Attack foi criado durante o curso <a class="link"href="https://desenvolvedorunity.com.br">Desenvolvedor Unity do Lucas Busato</a>, mas quis dar a minha
+            O Dead Attack foi criado durante o curso <a class="link" href="https://desenvolvedorunity.com.br">Desenvolvedor Unity do Lucas Busato</a>, mas quis dar a minha
             cara, alterando o visual pra <i>low poly</i>, e adicionando algumas mêcanicas mais parecidas com o modo
             zumbis do Call of Duty, jogo esse que foi parte da minha vida por muito tempo.
         </p>
@@ -80,7 +80,6 @@
     <section class="centeredList"> <!-- Proficiências -->
         <br>
         <div class="topic">
-            <img src="../img/jogos/_icons/iconDeadAttack.png" alt="Proficiências">
             <p>Proficiências</p>
             <p>&#10095;</p>
         </div>
@@ -94,7 +93,6 @@
     <section class="centeredList"> <!-- Responsabilidades -->
         <br>
         <div class="topic">
-            <img src="../img/jogos/_icons/iconDeadAttack.png" alt="Responsabilidades">
             <p>Responsabilidades</p>
             <p>&#10095;</p>
         </div>
@@ -117,6 +115,15 @@
 
 <script src="../scripts/gameScript.js"></script>
 <script>
+    GetJsonData().then(data => {
+        var linkElements = document.getElementsByClassName("DeadAttackDEMOLink");
+
+        for (let i = 0; i < linkElements.length; i++) {
+            const element = linkElements[i];
+            element.setAttribute('href', data.links.games.DeadAttackDEMO);
+        }
+    });
+
     LoadHTMLElement('../html-templates/footer.html', 'footer');
     LoadHTMLElement('../html-templates/header.html', 'header');
 </script>

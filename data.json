@@ -1,0 +1,16 @@
+{
+    "links": {
+        "games": {
+            "TimeHunt": "https://herrdanilo.itch.io/time-hunt",
+            "DeadAttackDEMO": "https://herrdanilo.itch.io/dead-attack-demo",
+            "_2048": "https://herrdanilo.itch.io/2048",
+            "PorUmFio": "https://herrdanilo.itch.io/por-um-fio",
+            "EmpilheAoInfinito": "https://herrdanilo.itch.io/empilhe-ao-infinito"
+        },
+        "socials": {
+            "github":"https://github.com/herrdanilo",
+            "linkedin": "https://www.linkedin.com/in/herrdanilo/",
+            "itchio":"https://herrdanilo.itch.io"
+        }
+    }
+}

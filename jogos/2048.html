@@ -46,10 +46,10 @@
 
     <section class="gameDescription">
         <p>
-            <a href="https://herrdanilo.itch.io/2048" target="_blank">
+            <a class="_2048Link" target="_blank">
                 <img class="miniItchio imgEsquerdaLink" src="../img/socials/itchio.png" alt="itch.io link">
             </a>
-            <a class="link" href="https://herrdanilo.itch.io/2048" target="_blank">
+            <a class="link _2048Link" target="_blank">
                 2048 está disponível na Itch.io!
             </a>
         </p>
@@ -61,13 +61,12 @@
         <p>Só então, eu consegui completar o jogo, e lançá-lo primeiro pelo próprio github, por meio de <i>releases</i>, só recentemente que criei uma página dedicada a ele na Itch.io.</p>
         <p>O relançamento foi só para disponibilizar novamente o jogo para o público, não houve mudanças no jogo.</p>
     </section>
-    
+
     <div class="separacaoQuarta"></div>
 
     <section class="centeredList"> <!-- Proficiências -->
         <br>
         <div class="topic">
-            <img src="../img/jogos/_icons/iconDeadAttack.png" alt="Proficiências">
             <p>Proficiências</p>
             <p>&#10095;</p>
         </div>
@@ -81,7 +80,6 @@
     <section class="centeredList"> <!-- Responsabilidades -->
         <br>
         <div class="topic">
-            <img src="../img/jogos/_icons/iconDeadAttack.png" alt="Responsabilidades">
             <p>Responsabilidades</p>
             <p>&#10095;</p>
         </div>
@@ -101,6 +99,15 @@
 
 <script src="../scripts/gameScript.js"></script>
 <script>
+    GetJsonData().then(data => {
+        var linkElements = document.getElementsByClassName("_2048Link");
+
+        for (let i = 0; i < linkElements.length; i++) {
+            const element = linkElements[i];
+            element.setAttribute('href', data.links.games._2048);
+        }
+    });
+
     LoadHTMLElement('../html-templates/footer.html', 'footer');
     LoadHTMLElement('../html-templates/header.html', 'header');
 </script>

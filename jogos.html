@@ -21,10 +21,29 @@
 
     <section class="games">
 
+        <div class="gameShort"> <!-- Por Um Fio -->
+            <h1>
+                <b>Por Um Fio
+                    <a id="PorUmFioLink" target="_blank">
+                        <img class="miniItchio" src="./img/socials/itchio.png" alt="itch.io link">
+                    </a>
+                </b>
+            </h1>
+            <h2>Lançado em 23 de Fevereiro de 2026</h2>
+            <a href="./jogos/PorUmFio.html">
+                <img class="gamePreview" src="./img/jogos/PorUmFio/PorUmFio-HUD.png" alt="Capa do jogo">
+            </a>
+            <p>Por Um Fio é um jogo <i>point-and-click</i> 3d onde um alfataite está totalmente endividado, e terá de
+                fazer pequenos trabalhos para pagar suas dívidas que não parecem ter fim.</p>
+            <p>Este é o meu primeiro jogo feito em grupo, e também durante minha primeira GameJam, a <a class="link"
+                    href="https://itch.io/jam/ctrl-alt-jam-carnaval-2026">CtrlAltJam Carnaval 2026</a>.</p>
+            <p><a class="link" href="./jogos/PorUmFio.html">Mais detalhes.</a></p>
+        </div>
+
         <div class="gameShort"> <!-- Dead Attack -->
             <h1>
                 <b>Dead Attack
-                    <a href="https://herrdanilo.itch.io/dead-attack-demo" target="_blank">
+                    <a id="DeadAttackLink" target="_blank">
                         <img class="miniItchio" src="./img/socials/itchio.png" alt="itch.io link">
                     </a>
                 </b>
@@ -40,7 +59,7 @@
         <div class="gameShort"> <!-- Time Hunt -->
             <h1>
                 <b>Time Hunt
-                    <a href="https://herrdanilo.itch.io/time-hunt" target="_blank">
+                    <a id="TimeHuntLink" target="_blank">
                         <img class="miniItchio" src="./img/socials/itchio.png" alt="itch.io link">
                     </a>
                 </b>
@@ -52,11 +71,31 @@
             <p>Time Hunt é um jogo de ação e plataforma, o objetivo do jogador é coletar todas as chaves no mapa antes que o tempo acabe.</p>
             <p><a class="link" href="./jogos/TimeHunt.html">Mais detalhes.</a></p>
         </div>
-        
+
+        <div class="gameShort"> <!-- Empilhe Ao Infinito -->
+            <h1>
+                <b>Empilhe Ao Infinito
+                    <a id="EmpilheAoInfinitoLink" target="_blank">
+                        <img class="miniItchio" src="./img/socials/itchio.png" alt="itch.io link">
+                    </a>
+                </b>
+            </h1>
+            <h2>Lançado em 27 de Fevereiro de 2026</h2>
+            <a href="./jogos/EmpilheAoInfinito.html">
+                <img class="gamePreview" src="./img/jogos/EmpilheAoInfinito/EAI-MainMenu.png" alt="Capa do jogo">
+            </a>
+            <p>Empilhe Ao Infinito é um jogo de <i>puzzle</i> em que o jogador deve empilhar blocos de diferentes
+                tamanhos numa pequena plataforma no meio do mar.</p>
+            <p>Apesar da data de lançamento, este jogo já estava pronto a alguns meses, fazendo parte dos projetos
+                realizados no curso <a class="link" href="https://desenvolvedorunity.com.br">Desenvolvedor Unity do
+                    Lucas Busato</a>.</p>
+            <p><a class="link" href="./jogos/EmpilheAoInfinito.html">Mais detalhes.</a></p>
+        </div>
+
         <div class="gameShort"> <!-- 2048 -->
             <h1>
                 <b>2048
-                    <a href="https://herrdanilo.itch.io/2048" target="_blank">
+                    <a id="_2048Link" target="_blank">
                         <img class="miniItchio" src="./img/socials/itchio.png" alt="itch.io link">
                     </a>
                 </b>
@@ -69,7 +108,7 @@
             <p>A minha versão do clássico 2048, um jogo em que o jogador precisa somar os quadrados ao jogá-los para os lados, cima e para baixo até alcançar 2048.</p>
             <p><a class="link" href="./jogos/2048.html">Mais detalhes.</a></p>
         </div>
-        
+
         <div class="gameShort"> <!-- Projeto Reciclagem -->
             <h1><b>Projeto Reciclagem</b></h1>
             <h2>Sem data de lançamento</h2>
@@ -90,6 +129,16 @@
 </html>
 
 <script>
+    GetJsonData().then(data => {
+        //#region Game Links
+        document.getElementById("DeadAttackLink").setAttribute('href', data.links.games.DeadAttackDEMO);
+        document.getElementById("TimeHuntLink").setAttribute('href', data.links.games.TimeHunt);
+        document.getElementById("_2048Link").setAttribute('href', data.links.games._2048);
+        document.getElementById("PorUmFioLink").setAttribute('href', data.links.games.PorUmFio);
+        document.getElementById("EmpilheAoInfinitoLink").setAttribute('href', data.links.games.EmpilheAoInfinito);
+        //#endregion
+    });
+
     LoadHTMLElement('../html-templates/header.html', 'header');
     LoadHTMLElement('../html-templates/footer.html', 'footer');
 </script>
